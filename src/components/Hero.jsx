@@ -12,6 +12,7 @@ import {
 import { GithubIcon, LinkedinIcon } from './Icons';
 import { profileData } from '../data/profile';
 import { useToast } from '../context/ToastContext';
+import {Logos } from '../assets/profile-pic.png'
 
 export const Hero = () => {
   const { showToast } = useToast();
@@ -173,7 +174,7 @@ export const Hero = () => {
                 {/* Profile Image / Stylized Placeholder */}
                 <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center group">
                   <img
-                    src="/public/images/profile-pic.png"
+                    src={Logos}
                     alt="Mukti Chakraborty - Aspiring Full-Stack Web Developer"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
