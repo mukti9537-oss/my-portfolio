@@ -173,7 +173,7 @@ export const Hero = () => {
                 {/* Profile Image / Stylized Placeholder */}
                 <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center group">
                   <img
-                    src="/src/assets/ChatGPT Image Oct 23, 2026, 01_27_26 AM.png"
+                    src="/src/assets/Screenshot 2026-10-23 014119.png"
                     alt="Mukti Chakraborty - Aspiring Full-Stack Web Developer"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
