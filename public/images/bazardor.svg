@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bz-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#04121d" />
+    </linearGradient>
+    <linearGradient id="bz-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="bz-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="bz-glow">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bz-bg)" />
+
+  <!-- Ambient background glow -->
+  <circle cx="680" cy="120" r="160" fill="#10b981" opacity="0.12" filter="url(#bz-glow)" />
+  <circle cx="120" cy="400" r="140" fill="#06b6d4" opacity="0.1" filter="url(#bz-glow)" />
+
+  <!-- Window Chrome / Header Bar -->
+  <rect x="40" y="40" width="720" height="420" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" />
+  <path d="M40 78 h720" stroke="#1e293b" stroke-width="1.5" />
+  
+  <!-- Window buttons -->
+  <circle cx="65" cy="59" r="6" fill="#ef4444" />
+  <circle cx="85" cy="59" r="6" fill="#eab308" />
+  <circle cx="105" cy="59" r="6" fill="#22c55e" />
+
+  <!-- URL Bar -->
+  <rect x="150" y="49" width="400" height="20" rx="6" fill="#1e293b" />
+  <text x="170" y="63" font-family="monospace" font-size="11" fill="#94a3b8">https://bazar-dor-website-rho.vercel.app</text>
+
+  <!-- App Header inside UI -->
+  <rect x="70" y="98" width="130" height="32" rx="6" fill="url(#bz-emerald)" opacity="0.15" />
+  <text x="85" y="120" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#34d399">BazarDor</text>
+  <text x="210" y="119" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Daily Market Prices • Live Tracker</text>
+
+  <!-- Search & Filter Bar -->
+  <rect x="70" y="145" width="450" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="95" y="168" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Search daily essentials (e.g., Rice, Potato, Onion, Oil)...</text>
+  <rect x="535" y="145" width="95" height="36" rx="8" fill="#10b981" />
+  <text x="582" y="167" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#022c22" text-anchor="middle">Search</text>
+
+  <!-- Price Cards Grid -->
+  <!-- Item 1 -->
+  <rect x="70" y="200" width="200" height="150" rx="10" fill="url(#bz-card)" stroke="#334155" stroke-width="1" />
+  <circle cx="110" cy="235" r="18" fill="#047857" opacity="0.3" />
+  <text x="110" y="240" font-family="system-ui, sans-serif" font-size="16" fill="#34d399" text-anchor="middle">🌾</text>
+  <text x="140" y="235" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#f8fafc">Miniket Rice</text>
+  <text x="140" y="250" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Per Kg / Dhaka</text>
+  <text x="90" y="300" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#34d399">৳ 72.00</text>
+  <rect x="90" y="315" width="60" height="18" rx="4" fill="#065f46" opacity="0.4" />
+  <text x="120" y="328" font-family="system-ui, sans-serif" font-size="10" fill="#6ee7b7" text-anchor="middle">▲ +2.1%</text>
+
+  <!-- Item 2 -->
+  <rect x="290" y="200" width="200" height="150" rx="10" fill="url(#bz-card)" stroke="#334155" stroke-width="1" />
+  <circle cx="330" cy="235" r="18" fill="#0284c7" opacity="0.3" />
+  <text x="330" y="240" font-family="system-ui, sans-serif" font-size="16" fill="#38bdf8" text-anchor="middle">🥔</text>
+  <text x="360" y="235" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#f8fafc">Fresh Potato</text>
+  <text x="360" y="250" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Per Kg / Local</text>
+  <text x="310" y="300" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#38bdf8">৳ 45.00</text>
+  <rect x="310" y="315" width="60" height="18" rx="4" fill="#075985" opacity="0.4" />
+  <text x="340" y="328" font-family="system-ui, sans-serif" font-size="10" fill="#7dd3fc" text-anchor="middle">▼ -1.5%</text>
+
+  <!-- Item 3 -->
+  <rect x="510" y="200" width="220" height="150" rx="10" fill="url(#bz-card)" stroke="#334155" stroke-width="1" />
+  <circle cx="550" cy="235" r="18" fill="#d97706" opacity="0.3" />
+  <text x="550" y="240" font-family="system-ui, sans-serif" font-size="16" fill="#fbbf24" text-anchor="middle">🧅</text>
+  <text x="580" y="235" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#f8fafc">Local Onion</text>
+  <text x="580" y="250" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Per Kg / Wholesale</text>
+  <text x="530" y="300" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#fbbf24">৳ 110.00</text>
+  <rect x="530" y="315" width="60" height="18" rx="4" fill="#92400e" opacity="0.4" />
+  <text x="560" y="328" font-family="system-ui, sans-serif" font-size="10" fill="#fde68a" text-anchor="middle">STABLE</text>
+
+  <!-- Trend graph line preview -->
+  <path d="M70 410 C 150 390, 220 425, 300 400 C 400 370, 500 415, 600 380 L 730 405" fill="none" stroke="#10b981" stroke-width="2.5" opacity="0.7" />
+  <circle cx="730" cy="405" r="4" fill="#10b981" />
+  <text x="70" y="440" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Live Daily Market Aggregator & Price Intelligence Engine</text>
+</svg>

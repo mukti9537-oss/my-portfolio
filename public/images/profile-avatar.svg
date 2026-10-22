@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" rx="32" fill="url(#bg-grad)" />
+
+  <!-- Subtle Grid Lines -->
+  <path d="M40 0v400 M80 0v400 M120 0v400 M160 0v400 M200 0v400 M240 0v400 M280 0v400 M320 0v400 M360 0v400" stroke="#334155" stroke-opacity="0.15" stroke-width="1" />
+  <path d="M0 40h400 M0 80h400 M0 120h400 M0 160h400 M0 200h400 M0 240h400 M0 280h400 M0 320h400 M0 360h400" stroke="#334155" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- Outer Glowing Circle -->
+  <circle cx="200" cy="180" r="110" fill="none" stroke="url(#accent-grad)" stroke-width="3" filter="url(#glow)" opacity="0.8" />
+  <circle cx="200" cy="180" r="100" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Stylized Developer Silhouette -->
+  <!-- Head -->
+  <circle cx="200" cy="145" r="45" fill="url(#accent-grad)" opacity="0.9" />
+  <!-- Hair / Crown Accent -->
+  <path d="M165 145c0-22 15-40 35-40s35 18 35 40c-10-8-22-12-35-12s-25 4-35 12z" fill="#0f172a" opacity="0.4" />
+  <!-- Shoulders / Torso -->
+  <path d="M130 250c0-38 31-70 70-70s70 32 70 70z" fill="url(#accent-grad)" opacity="0.85" />
+  <!-- Laptop in front -->
+  <rect x="145" y="240" width="110" height="24" rx="4" fill="#020617" stroke="#38bdf8" stroke-width="1.5" />
+  <polygon points="135,264 265,264 250,274 150,274" fill="#1e293b" />
+  <!-- Code bracket icon on laptop -->
+  <path d="M192 248l-5 4 5 4 M208 248l5 4-5 4" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Monogram Pill at bottom -->
+  <rect x="120" y="325" width="160" height="38" rx="19" fill="#1e1b4b" stroke="url(#accent-grad)" stroke-width="1.5" />
+  <text x="200" y="349" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle" letter-spacing="1.5">MUKTI CHAKRABORTY</text>
+</svg>

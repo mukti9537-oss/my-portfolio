@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stk-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050d1a" />
+      <stop offset="50%" stop-color="#0b1528" />
+      <stop offset="100%" stop-color="#060c18" />
+    </linearGradient>
+    <linearGradient id="stk-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <filter id="stk-glow">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#stk-bg)" />
+  <circle cx="700" cy="200" r="160" fill="#3b82f6" opacity="0.14" filter="url(#stk-glow)" />
+  <circle cx="100" cy="300" r="140" fill="#06b6d4" opacity="0.12" filter="url(#stk-glow)" />
+
+  <rect x="40" y="40" width="720" height="420" rx="12" fill="#090f1d" stroke="#1e293b" stroke-width="1.5" />
+  <path d="M40 78 h720" stroke="#1e293b" stroke-width="1.5" />
+
+  <circle cx="65" cy="59" r="6" fill="#ef4444" />
+  <circle cx="85" cy="59" r="6" fill="#eab308" />
+  <circle cx="105" cy="59" r="6" fill="#22c55e" />
+
+  <rect x="150" y="49" width="340" height="20" rx="6" fill="#1e293b" />
+  <text x="170" y="63" font-family="monospace" font-size="11" fill="#94a3b8">https://dev-stack-builder.local/configurator</text>
+
+  <!-- Title -->
+  <rect x="70" y="98" width="165" height="32" rx="6" fill="url(#stk-cyan)" opacity="0.15" />
+  <text x="85" y="120" font-family="system-ui, sans-serif" font-weight="800" font-size="17" fill="#38bdf8">Dev Stack Builder</text>
+  <text x="250" y="119" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Interactive Full-Stack Architecture Generator</text>
+
+  <!-- Interactive Configurator Columns -->
+  <!-- Left Column: Layer Pickers -->
+  <rect x="70" y="145" width="340" height="290" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  <text x="90" y="175" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#cbd5e1">1. Frontend Layer (Selected)</text>
+
+  <rect x="90" y="190" width="95" height="40" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="137" y="215" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#38bdf8" text-anchor="middle">⚛️ React</text>
+
+  <rect x="195" y="190" width="95" height="40" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="242" y="215" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#94a3b8" text-anchor="middle">Next.js</text>
+
+  <rect x="300" y="190" width="95" height="40" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="347" y="215" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#94a3b8" text-anchor="middle">Vue.js</text>
+
+  <text x="90" y="260" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#cbd5e1">2. Backend Runtime & Framework</text>
+  <rect x="90" y="275" width="145" height="40" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="162" y="300" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#38bdf8" text-anchor="middle">🟢 Node.js / Express</text>
+
+  <rect x="245" y="275" width="145" height="40" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="317" y="300" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#94a3b8" text-anchor="middle">⚡ Fastify</text>
+
+  <text x="90" y="345" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#cbd5e1">3. Database & ORM</text>
+  <rect x="90" y="360" width="145" height="40" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="162" y="385" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#38bdf8" text-anchor="middle">🍃 MongoDB / Mongoose</text>
+
+  <rect x="245" y="360" width="145" height="40" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="317" y="385" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#94a3b8" text-anchor="middle">🐘 PostgreSQL</text>
+
+  <!-- Right Column: Terminal CLI Preview -->
+  <rect x="430" y="145" width="300" height="290" rx="10" fill="#020617" stroke="#1e293b" stroke-width="1" />
+  <text x="450" y="175" font-family="monospace" font-size="12" fill="#38bdf8">$ npx create-mern-stack my-app</text>
+  <text x="450" y="200" font-family="monospace" font-size="11" fill="#64748b">✔ Resolving compatible packages...</text>
+  <text x="450" y="220" font-family="monospace" font-size="11" fill="#64748b">✔ Generating JWT auth scaffolding</text>
+  <text x="450" y="240" font-family="monospace" font-size="11" fill="#64748b">✔ Configuring Tailwind CSS & Vite</text>
+  <text x="450" y="260" font-family="monospace" font-size="11" fill="#22c55e">✔ Stack successfully generated in 2.4s</text>
+  
+  <rect x="450" y="285" width="260" height="85" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="465" y="310" font-family="monospace" font-size="11" fill="#cbd5e1">cd my-app</text>
+  <text x="465" y="330" font-family="monospace" font-size="11" fill="#cbd5e1">npm install</text>
+  <text x="465" y="350" font-family="monospace" font-size="11" fill="#38bdf8">npm run dev  # 🚀 Started on :5173</text>
+
+  <rect x="450" y="385" width="260" height="36" rx="6" fill="#2563eb" />
+  <text x="580" y="407" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#ffffff" text-anchor="middle">Download Scaffold ZIP ⚡</text>
+</svg>
