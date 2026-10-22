@@ -178,28 +178,11 @@ export const Hero = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
 
-                  {/* Subtle overlay badge */}
-                  <div className="absolute bottom-3 left-3 right-3 py-2 px-3 rounded-lg bg-slate-950/85 backdrop-blur-md border border-slate-800/80 flex items-center justify-between text-xs">
-                    <span className="text-slate-300 font-medium">Developer Profile</span>
-                    <span className="text-indigo-400 font-mono text-[11px]">Ready to Code</span>
-                  </div>
+                
+                
                 </div>
 
-                {/* Quick Info Box underneath */}
-                <div className="mt-5 space-y-3">
-                  <div className="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800/80 pb-2.5">
-                    <span>Specialization</span>
-                    <span className="text-slate-200 font-medium">React • JavaScript • Node</span>
-                  </div>
-                  <div className="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800/80 pb-2.5">
-                    <span>Education</span>
-                    <span className="text-slate-200 font-medium">Diploma in Computer Eng.</span>
-                  </div>
-                  <div className="flex items-center justify-between text-xs text-slate-400">
-                    <span>Location</span>
-                    <span className="text-slate-200 font-medium">Bangladesh</span>
-                  </div>
-                </div>
+              
 
               </div>
             </div>
